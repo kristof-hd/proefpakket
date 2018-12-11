@@ -7,7 +7,12 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlRootElement;
 
+@XmlRootElement
+@XmlAccessorType(XmlAccessType.FIELD)
 @Entity
 @Table(name = "gemeenten")
 public class Gemeente implements Serializable {
@@ -17,6 +22,11 @@ public class Gemeente implements Serializable {
 	private long id;
 	private short postcode;
 	private String naam;
+
+	public long getId() {
+		return id; 
+	}
+	
 	public short getPostcode() {
 		return postcode;
 	}

@@ -5,7 +5,7 @@ import javax.validation.ConstraintValidatorContext;
 
 public class OndernemingsNrValidator implements ConstraintValidator<OndernemingsNr, Long> {
 	@Override
-	public void initialize(OndernemingsNr postcode) {
+	public void initialize(OndernemingsNr ondernemingsNr) {
 	}
 
 	@Override
